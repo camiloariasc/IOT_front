@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	
+
+<div class="limiter">
+	<div class="login100-pic js-tilt">
+		<img src="../assets/zyro-image.png"  alt="IMG">
+	</div>
+	<div class="container-login100">
+		<form *ngIf="loginForm" [formGroup]="loginForm">
+			<div class="wrap-input100 validate-input">
+				<span class="login100-form-title">
+					Iniciar sesión
+				</span>
+				<div class="wrap-input100 validate-input" >
+					<input type="text" formControlName="user" class="input100" id="idUser" placeholder="Usuario">
+					
+				</div>
+				<div class="wrap-input100 validate-input">
+					<input type="password" formControlName="password" class="input100" id="password" placeholder="Contraseña">
+					
+				</div>
+			</div>
+			<div class="container-login100-form-btn">
+				<button class="login100-form-btn" (click)="login()">
+					<i class="fa fa-sign-out"></i> Iniciar Sesión</button>
+			</div>
+		</form>
+	</div>
+	
+</div>
+
+
+
+</body>
+<footer>
+    <p >
+        Hecho por estudiantes IOT-UCO 2022-1
+    </p>
+</footer>
+</html>
+
